@@ -29,7 +29,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-
-
-![Alt Text](https://github.com/atlehjelmseth/project-exam-2/blob/main/src/holidaze_git.png))
