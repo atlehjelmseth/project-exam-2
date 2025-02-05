@@ -1,0 +1,40 @@
+.calendar_container .pastDate {
+  color: lightgrey !important;
+}
+
+.react-calendar__tile abbr {
+  color: black !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+.bookedDate abbr {
+  color: red !important;
+}
+
+.react-calendar__tile--now {
+  background: red !important;
+}
+
+.react-calendar__tile--now {
+  background: red !important;
+}
+
+.bookedDate {
+  text-decoration: line-through !important;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.selectedCheckIn {
+  background-color: lightgreen !important;
+}
+
+.selectedCheckOut {
+  background-color: lightgreen !important;
+  color: black !important;
+}
+
+.inRange {
+  background-color: lightgreen !important;
+}

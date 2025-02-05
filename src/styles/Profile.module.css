@@ -1,0 +1,68 @@
+.profileContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.inputField {
+  width: 200px !important;
+}
+
+.inputGuests {
+  max-width: 15px;
+}
+
+.inputGuests::-webkit-outer-spin-button,
+.inputGuests::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.updatePictureContainer {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-bottom: 50px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  padding: 20px;
+}
+
+.profileInfo {
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.logoutButton {
+  background-color: red;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bookingCard {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

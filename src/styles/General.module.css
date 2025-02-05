@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+* {
+  font-family: "Afacad Flux", sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+h1,
+h2 {
+  text-align: center;
+  overflow: hidden;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1045px;
+  margin: 0 auto 50px auto;
+  position: relative;
+  top: -60px;
+}
+
+.frontPage {
+  padding-top: 500px;
+  max-width: 1045px;
+  margin: auto;
+  background-image: url("../front.jpg");
+  position: relative;
+  top: -45px;
+  border-radius: 10px;
+  opacity: 0.4;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.loading {
+  margin: auto;
+  text-align: center;
+  color: green;
+  font-size: 2em;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+.error {
+  margin: auto;
+  text-align: center;
+  color: red;
+  font-size: 2em;
+  margin-top: 200px;
+}
+
+.result {
+  padding: 0;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  max-height: 200px;
+  max-width: 300px;
+  overflow-y: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.resultItem {
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10 !important;
+  position: relative;
+}
+
+.resultItem:hover {
+  background-color: #f8f8f8;
+  z-index: 10 !important;
+}
+
+.price {
+  margin-bottom: 50px;
+}
+
+.searchContainer {
+  display: flex;
+  position: relative;
+  top: 55px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 600px;
+  text-align: center;
+  z-index: 2;
+}
+
+.searchContainer select {
+  margin-top: auto;
+  padding: 0;
+  height: 37px;
+  max-width: 100px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 5px;
+}
+
+.searchbar {
+  display: block;
+  margin: 5px auto 5px auto;
+  width: 100%;
+  height: 31px;
+  overflow-y: hidden;
+  border-radius: none;
+}
+
+.searchContainer select option {
+  width: 500px;
+}
+
+.searchContainer button {
+  max-width: 100px;
+}
+
+/* Venue Page*/
+
+.underPageStructure {
+  display: flex;
+  flex-direction: column;
+  max-width: 1040px;
+  margin: auto;
+}
+
+.bookedDate {
+  text-decoration: line-through !important;
+  color: red !important;
+  pointer-events: none;
+}
+
+.selectedCheckIn {
+  background-color: #ffeb3b !important;
+  color: black !important;
+}
+
+.selectedCheckOut {
+  background-color: #ff9800 !important;
+  color: black !important;
+}
+
+.reactCalendar button {
+  color: black !important;
+}
+
+@media (max-width: 850px) {
+  .frontPage {
+    padding-top: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .frontPage {
+    background-image: none;
+    padding-top: 100px;
+  }
+}

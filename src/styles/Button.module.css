@@ -1,0 +1,107 @@
+.primaryButton {
+  padding: 10px;
+  width: 150px;
+  background-color: rgb(25, 61, 29);
+  color: white;
+  margin: 5px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  border: 3px solid rgb(25, 61, 29);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  outline: none;
+}
+
+.primaryButton:hover {
+  background-color: white;
+  color: rgb(25, 61, 29);
+}
+
+.searchVenue {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
+  padding: 10px;
+  width: 150px;
+  background-color: rgb(25, 61, 29);
+  color: white;
+  margin: 5px auto;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  border: 3px solid rgb(25, 61, 29);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  outline: none;
+  max-height: 37px;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.searchVenue:hover {
+  background-color: white;
+  color: rgb(25, 61, 29);
+}
+
+.callToAction {
+  background-color: lightgreen;
+  color: black;
+}
+
+.buttonsDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.proceedButton {
+  display: flex;
+  margin: 15px auto 50px auto;
+  text-align: center;
+  justify-content: center;
+  background-color: green;
+  max-width: 200px;
+}
+
+.deleteButton {
+  padding: 10px;
+  width: 150px;
+  background-color: rgb(173, 27, 63);
+  color: white;
+  margin: 5px auto;
+  gap: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  border: 3px solid rgb(173, 27, 63);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  outline: none;
+}
+
+.deleteButton:hover {
+  background-color: white;
+  color: rgb(173, 27, 63);
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-bottom: 50px;
+}
+
+.buttonContainerRow {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-self: center;
+  margin-bottom: 50px;
+}

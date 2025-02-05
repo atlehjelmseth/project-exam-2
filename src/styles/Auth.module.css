@@ -1,0 +1,83 @@
+.authContainer {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.authContainer form {
+  display: grid;
+  margin-bottom: 50px;
+}
+
+.createContainer {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.editVenue {
+  display: grid;
+}
+
+.errorText {
+  color: red;
+  font-weight: bold;
+}
+
+.successText {
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a,
+.navbar button {
+  text-decoration: none;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.errorContainer {
+  margin-top: 10px;
+  background: #ffe6e6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.successMessage {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
