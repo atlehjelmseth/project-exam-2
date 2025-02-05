@@ -29,3 +29,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+
+
+![Alt Text](https://comfy-pasca-9d6673.netlify.app/static/media/front.14b7bba366be593b54cc.jpg)
