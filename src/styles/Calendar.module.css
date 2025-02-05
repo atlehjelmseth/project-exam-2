@@ -8,6 +8,13 @@
   font-weight: bold !important;
 }
 
+.react-calendar,
+.react-calendar *,
+.react-calendar :after,
+.react-calendar :before {
+  color: black !important;
+}
+
 .bookedDate abbr {
   color: red !important;
 }
