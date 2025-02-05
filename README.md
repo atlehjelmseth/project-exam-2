@@ -1,6 +1,7 @@
 # Holidaze - Project Exam 2
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt Text](https://github.com/atlehjelmseth/project-exam-2/blob/main/src/holidaze_git.png))
 
 ## Available Scripts
 
@@ -31,4 +32,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-![Alt Text](https://comfy-pasca-9d6673.netlify.app/static/media/front.14b7bba366be593b54cc.jpg)
+![Alt Text](https://github.com/atlehjelmseth/project-exam-2/blob/main/src/holidaze_git.png))
