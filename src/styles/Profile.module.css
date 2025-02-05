@@ -32,6 +32,8 @@
   border-top: solid 1px;
   border-bottom: solid 1px;
   padding: 20px;
+  text-align: center;
+  justify-items: center;
 }
 
 .profileInfo {
