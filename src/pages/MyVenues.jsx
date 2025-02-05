@@ -13,6 +13,8 @@ function MyVenues() {
   const [error, setError] = useState(false)
   const [editingVenue, setEditingVenue] = useState(null)
   const [editData, setEditData] = useState({})
+  const [selectedBookings, setSelectedBookings] = useState(null)
+  const [selectedVenueId, setSelectedVenueId] = useState(null)
 
   useEffect(() => {
     if (!user) return
@@ -151,6 +153,25 @@ function MyVenues() {
       }
     } catch (error) {
       console.error("Error deleting venue:", error)
+    }
+  }
+  const handleViewBookings = async (venue) => {
+    const storedUser = JSON.parse(localStorage.getItem("user"))
+    try {
+      const response = await fetch(`${VENUE_API}/${venue.id}?_bookings=true`, {
+        headers: {
+          Authorization: `Bearer ${storedUser.accessToken}`,
+          "X-Noroff-API-Key": API_KEY,
+        },
+      })
+      if (!response.ok) {
+        throw new Error("Failed to fetch bookings.")
+      }
+      const data = await response.json()
+      setSelectedBookings(data.data.bookings)
+      setSelectedVenueId(venue.id)
+    } catch (error) {
+      console.error("Error fetching bookings for venue:", error)
     }
   }
 
@@ -357,7 +378,54 @@ function MyVenues() {
                   >
                     Delete Venue
                   </button>
+                  <button
+                    onClick={() => handleViewBookings(venue)}
+                    className={ButtonStyles.primaryButton}
+                  >
+                    View Bookings
+                  </button>
                 </div>
+                {selectedVenueId === venue.id && (
+                  <div className={Styles.bookingsContainer}>
+                    <h4>Bookings for this venue:</h4>
+                    {selectedBookings && selectedBookings.length === 0 ? (
+                      <p>No bookings for this venue.</p>
+                    ) : (
+                      selectedBookings &&
+                      selectedBookings.map((booking) => (
+                        <div key={booking.id} className={Styles.bookingDetail}>
+                          <p>
+                            <strong>ID:</strong> {booking.id}
+                          </p>
+                          <p>
+                            <strong>Date From:</strong> {booking.dateFrom}
+                          </p>
+                          <p>
+                            <strong>Date To:</strong> {booking.dateTo}
+                          </p>
+                          <p>
+                            <strong>Guests:</strong> {booking.guests}
+                          </p>
+                          {booking.customer && (
+                            <p>
+                              <strong>Customer:</strong> {booking.customer.name}{" "}
+                              ({booking.customer.email})
+                            </p>
+                          )}
+                        </div>
+                      ))
+                    )}
+                    <button
+                      onClick={() => {
+                        setSelectedBookings(null)
+                        setSelectedVenueId(null)
+                      }}
+                      className={ButtonStyles.deleteButton}
+                    >
+                      Hide Bookings
+                    </button>
+                  </div>
+                )}
               </div>
             )}
           </div>

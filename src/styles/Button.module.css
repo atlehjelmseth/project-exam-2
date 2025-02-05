@@ -84,6 +84,7 @@
   text-align: center;
   line-height: 1;
   outline: none;
+  height: 42px;
 }
 
 .deleteButton:hover {
