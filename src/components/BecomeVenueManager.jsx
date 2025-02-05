@@ -62,7 +62,7 @@ function BecomeVenueManager({ user, updateProfile }) {
       ) : (
         <button
           onClick={handleBecomeVenueManager}
-          className={Styles.becomeButton}
+          className={ButtonStyles.primaryButton}
         >
           Become a Venue Manager
         </button>

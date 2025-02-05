@@ -67,7 +67,7 @@ function LoginPage() {
           required
         />
         {error && <p className={Styles.errorText}>{error}</p>}
-        <button className={ButtonStyles.proceedButton} type="submit">
+        <button className={ButtonStyles.primaryButton} type="submit">
           Login
         </button>
       </form>

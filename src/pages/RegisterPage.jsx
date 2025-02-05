@@ -122,7 +122,7 @@ function RegisterPage() {
         )}
 
         <button
-          className={ButtonStyles.proceedButton}
+          className={ButtonStyles.primaryButton}
           type="submit"
           disabled={loading}
         >
