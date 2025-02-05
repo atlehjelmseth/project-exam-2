@@ -9,16 +9,19 @@
 
 .inputField {
   width: 200px !important;
+  font-size: 16px;
 }
 
 .inputGuests {
   max-width: 15px;
+  font-size: 16px;
 }
 
 .inputGuests::-webkit-outer-spin-button,
 .inputGuests::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+  font-size: 16px;
 }
 
 .updatePictureContainer {

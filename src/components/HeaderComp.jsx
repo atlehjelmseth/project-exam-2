@@ -1,7 +1,7 @@
 import Nav from "./Navigation"
 import { useNavigate } from "react-router-dom"
 import Styles from "../styles/Navbar.module.css"
-import logo from "../logo.png" // Import the logo
+import logo from "../logo.png"
 
 function Header() {
   const navigate = useNavigate()
