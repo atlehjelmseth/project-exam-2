@@ -19,6 +19,10 @@
   color: red !important;
 }
 
+.react-calendar__tile {
+  color: black !important;
+}
+
 .react-calendar__tile--now {
   background: red !important;
 }
