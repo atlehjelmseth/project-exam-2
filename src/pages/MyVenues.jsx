@@ -373,20 +373,20 @@ function MyVenues() {
                     Edit Venue
                   </button>
                   <button
-                    onClick={() => handleDeleteVenue(venue.id)}
-                    className={ButtonStyles.deleteButton}
-                  >
-                    Delete Venue
-                  </button>
-                  <button
                     onClick={() => handleViewBookings(venue)}
                     className={ButtonStyles.primaryButton}
                   >
                     View Bookings
                   </button>
+                  <button
+                    onClick={() => handleDeleteVenue(venue.id)}
+                    className={ButtonStyles.deleteButton}
+                  >
+                    Delete Venue
+                  </button>
                 </div>
                 {selectedVenueId === venue.id && (
-                  <div className={Styles.bookingsContainer}>
+                  <div>
                     <h4>Bookings for this venue:</h4>
                     {selectedBookings && selectedBookings.length === 0 ? (
                       <p>No bookings for this venue.</p>

@@ -72,3 +72,7 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
+.bookingDetail {
+  border: 1px solid #ddd;
+}

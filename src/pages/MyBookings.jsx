@@ -116,7 +116,7 @@ function MyBookings() {
                 onClick={() => handleDeleteBooking(booking.id)}
                 className={ButtonStyles.deleteButton}
               >
-                Remove Booking
+                Remove
               </button>
             </div>
           )

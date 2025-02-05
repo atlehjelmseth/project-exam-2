@@ -5,7 +5,7 @@
   margin-bottom: 10px;
   border: 1px solid #ddd;
   max-width: 600px;
-  margin: auto;
+  margin: 0 auto 50px auto;
 }
 
 .authContainer form {

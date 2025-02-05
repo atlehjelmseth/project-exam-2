@@ -148,7 +148,7 @@ img {
   display: flex;
   flex-direction: column;
   max-width: 1040px;
-  margin: auto;
+  margin: 0 auto 50px auto;
 }
 
 .bookedDate {
