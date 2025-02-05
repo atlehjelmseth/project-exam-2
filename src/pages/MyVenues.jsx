@@ -365,7 +365,7 @@ function MyVenues() {
                     </p>
                   </div>
                 )}
-                <div className={ButtonStyles.buttonContainerRow}>
+                <div className={ButtonStyles.buttonContainer}>
                   <button
                     onClick={() => handleEditClick(venue)}
                     className={ButtonStyles.primaryButton}
