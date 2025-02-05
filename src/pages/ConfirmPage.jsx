@@ -75,7 +75,6 @@ function ConfirmPage() {
         body: JSON.stringify(bookingData),
       })
       const data = await response.json()
-      console.log("Booking Response:", data)
       if (!response.ok) {
         const errorMessage =
           data.errors?.map((err) => err.message).join(", ") ||

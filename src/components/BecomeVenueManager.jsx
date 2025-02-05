@@ -23,7 +23,6 @@ function BecomeVenueManager({ user, updateProfile }) {
       })
 
       const data = await response.json()
-      console.log("Become Venue Manager Response:", data)
 
       if (!response.ok) {
         setUpdateMessage(

@@ -35,7 +35,6 @@ function MyProfile() {
           throw new Error("Failed to fetch profile.")
         }
         const data = await response.json()
-        console.log("Fetched Profile Data:", data)
 
         const updatedUser = {
           ...storedUser,
@@ -102,7 +101,6 @@ function MyProfile() {
   if (!user) return <p>Please log in to access your profile.</p>
   if (loading) return <p>Loading profile...</p>
   if (error) return <p>Failed to load data. Please try again later.</p>
-  console.log(profile)
 
   return (
     <div className={Styles.profileContainer}>
