@@ -63,7 +63,7 @@ The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 ## Contact
-[My LinkedIn page](https://www.linkedin.com/in/atle-reinfjord-andersen-hjelmseth-42709b30/)
+- https://www.linkedin.com/in/atle-reinfjord-andersen-hjelmseth-42709b30/
 
 ## Online:
 - https://comfy-pasca-9d6673.netlify.app/
