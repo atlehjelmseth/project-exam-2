@@ -30,7 +30,7 @@ A accommodation booking site called Holidaze:
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:atlehjelmseth/project-exam-1-atlehjelmseth.git
+git clone git@github.com:atlehjelmseth/project-exam-2.git
 ```
 
 2. Install the dependencies:
